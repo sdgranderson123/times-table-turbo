@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+
+
+Times Table Turbo
+
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    margin-top:10px;
+}
+
+#score,#streak{
+    font-size:24px;
+    font-weight:bold;
+}
+
+#timer{
+    font-size:30px;
+    color:#facc15;
+    margin:15px;
+}
+
+#question{
+    font-size:70px;
+    margin:30px 0;
+    font-weight:bold;
+}
+
+#answers{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    max-width:500px;
+    margin:auto;
+}
+
+.answer{
+    font-size:32px;
+    padding:20px;
+    border:none;
+    border-radius:15px;
+    background:#2563eb;
+    color:white;
+}
+
+.answer:active{
+    transform:scale(.97);
+}
+
+.correct{
+    background:#22c55e;
+}
+
+.wrong{
+    background:#ef4444;
+}
+
+#startScreen,
+#gameScreen,
+#endScreen{
+    display:none;
+}
+
+.active{
+    display:block;
+}
+
+.bigButton{
+    padding:20px 40px;
+    font-size:28px;
+    border:none;
+    border-radius:15px;
